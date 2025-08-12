@@ -20,10 +20,10 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-app.use("/users", userRoutes);
-app.use("/rooms", roomRoutes);
-app.use("/auth", authRoutes);
-app.use("/chats", chatRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/rooms", roomRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/chats", chatRoutes);
 
 initSocket(server);
 
