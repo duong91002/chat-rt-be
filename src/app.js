@@ -17,7 +17,7 @@ const server = http.createServer(app);
 
 connectDB();
 
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 app.use("/api/users", userRoutes);
