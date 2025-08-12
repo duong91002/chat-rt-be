@@ -6,7 +6,7 @@ const chatService = require("../services/chat.service");
 module.exports = (server) => {
   const io = new Server(server, {
     cors: {
-      origin: "https://chat-rt-fe.vercel.app",
+      origin: "*",
       methods: ["GET", "POST"],
     },
   });
