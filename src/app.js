@@ -17,13 +17,7 @@ const server = http.createServer(app);
 
 connectDB();
 
-app.use(
-  cors({
-    origin: "https://chat-rt-fe.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    credentials: true,
-  })
-);
+// app.use(cors());
 app.use(express.json());
 
 app.use("/api/users", userRoutes);
